@@ -14,6 +14,12 @@ namespace DatabaseFirst.Models
     
     public partial class Stock
     {
-        public string SymbolID { get; set; }
+        public int ID { get; set; }
+        public string Symbol { get; set; }
+        public decimal LastPrice { get; set; }
+        public decimal Change { get; set; }
+        public decimal PercentChange { get; set; }
+        public string Currency { get; set; }
+        public decimal MarketCap { get; set; }
     }
 }
